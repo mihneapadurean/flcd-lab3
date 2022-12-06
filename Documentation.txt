@@ -1,0 +1,29 @@
+A finite automaton -FA- is a 5-tuple: M = (Q,Σ,δ,q0,F).
+Q - set of states 
+E - alphabet
+d - transition function
+q0 - initial state 
+F - set of final states 
+
+The file FA.in must have the following structure:
+L1: Q
+L2: E
+L3: q0
+L4: F
+L5...: d (one transition/line)
+
+BNF/EBNF format of the file FA.in and language syntax (predefined tokens are specified between " and "):
+
+inFile ::= Q nl E nl q0 nl F nl d {n1 d}
+
+nl ::= "\n" 
+Q ::= letter {letter}
+E ::= {letter|digit|symbol}
+d ::= {letter","(letter|digit|symbol)","letter}
+q0 ::= letter
+F ::= letter {letter}
+
+
+letter = "a"|...|"z"|"A"|...|"Z"
+digit = "0"|"1"|...|"9"
+symbol = "+"|"-"|"!"|"@"|"#"|"$"|"%"|"^"|"&"|"*"|"("|")"|...

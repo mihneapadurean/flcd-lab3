@@ -1,0 +1,1 @@
+The main code for parsing the FA.in is in the FA class, which parses the input file using the defined syntax (in Documentation.txt) and saves the parsed values in a new FA object.
